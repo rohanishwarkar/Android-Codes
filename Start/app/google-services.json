@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "919654225670",
+    "firebase_url": "https://smarthygienemonitor-cae37.firebaseio.com",
+    "project_id": "smarthygienemonitor-cae37",
+    "storage_bucket": "smarthygienemonitor-cae37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919654225670:android:0379455498976069",
+        "android_client_info": {
+          "package_name": "com.example.razor.start"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919654225670-hqg6844pificnhhc859d4cujivfp73ah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.razor.start",
+            "certificate_hash": "a0b09eb6eafa57be0bd00c5b769cac7eedea0864"
+          }
+        },
+        {
+          "client_id": "919654225670-gmrudjq4770rsm5fqs2b5ro3e6r3paj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVCvwLmhYgxIed8IB2C9qYNh5xqImK_fM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919654225670-gmrudjq4770rsm5fqs2b5ro3e6r3paj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

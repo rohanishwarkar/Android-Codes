@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="25dp"
+    android:background="@color/white"
+    >
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/capture"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/cyan"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Yaser"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id="@+id/name"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yaser"
+            android:fontFamily="@font/raleway_light"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/phno"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

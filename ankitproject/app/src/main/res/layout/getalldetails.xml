@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/roundd">
+    <TextView
+        android:id="@+id/startyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:typeface="serif"
+        android:text="\n Initial vectors randomly chosen from:
+                double[][] init_vec_array = {\n
+                        {0.9, 0.1, 0, 0},\n
+                        {0.8, 0.2, 0, 0},\n
+                        {0.7, 0.3, 0, 0}\n
+                };\n
+        The default values of the probability \n transition matrix(4X4):\n
+        double[][] prob_tran_matrix = {\n
+                        {0.7, 0.3, 0, 0},\n
+                        {0, 0.6, 0.4, 0},\n
+                        {0, 0, 0.5, 0.5},\n
+                        {0, 0, 0, 1}\n
+                };\n
+
+start year by default: 2018\n"
+        />
+
+</LinearLayout>

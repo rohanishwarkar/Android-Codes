@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:background="@color/cyan"-->
+                <!--app:title="Map"-->
+                <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map">
+            <fragment
+                android:layout_margin="2dp"
+                android:id="@+id/map_fragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.rohan.mapplotting.MapsActivity" />
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/map"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:elevation="20dp"
+            android:background="@drawable/arrow_back"
+            android:text="Button" />
+
+        <ImageView
+            android:id="@+id/pointToLocation"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:elevation="20dp"
+            android:src="@drawable/ic_my_location_black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/devicenamemap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:text="DEVICE NAME:"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/arrowleftmap"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:elevation="20dp"
+            android:onClick="prev_map"
+            android:src="@drawable/ic_navigate_before"
+            android:text="Prev" />
+
+        <ImageView
+            android:id="@+id/arrowrightmap"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="265dp"
+            android:layout_marginEnd="13dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:elevation="20dp"
+            android:onClick="next_map"
+            android:src="@drawable/ic_navigate_next"
+            android:text="Next" />
+
+    </RelativeLayout>
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:id="@+id/nav_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--app:headerLayout="@layout/nav_header_dashboard"-->
+        <!--app:menu="@menu/activity_dashboard_drawer" >-->
+    <!--</android.support.design.widget.NavigationView>-->
+
+</RelativeLayout>
